@@ -141,13 +141,13 @@ int main(void)
 
 	          // Set RGB LED color based on number
 	          if (number <= 10) {
-	              rgb_colour(255, 0, 0); // Red
+	              rgb_colour(255, 0, 0); // Red to A0
 	              HAL_Delay(1000);
 	          } else if (number > 10 && number <= 18) {
-	              rgb_colour(0, 0, 255); // Blue
+	              rgb_colour(0, 0, 255); // Blue to D6
 	              HAL_Delay(1000);
 	          } else {
-	              rgb_colour(0, 255, 0); // Green
+	              rgb_colour(0, 255, 0); // Green to A1
 	              HAL_Delay(1000);
 	          }
 	          number = 0;
